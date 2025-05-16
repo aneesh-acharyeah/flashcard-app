@@ -1,13 +1,19 @@
 import React from 'react';
-import './App.css';
 import Flashcard from './Flashcard';
-import { flashcards } from './data';
+import { flashcards } from './data'; // make sure the path is correct
 
 function App() {
   return (
-    <div className="App">
-      <h1>📘 Flashcard Learning App</h1>
-      <div className="card-grid">
+    <div>
+      <h1 style={{ textAlign: 'center', marginTop: '2rem' }}>🧠 Flashcard Quiz</h1>
+      <p style={{ textAlign: 'center' }}>Click on a card to flip it!</p>
+      <div style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        justifyContent: 'center',
+        gap: '2rem',
+        padding: '2rem'
+      }}>
         {flashcards.map(card => (
           <Flashcard key={card.id} card={card} />
         ))}
