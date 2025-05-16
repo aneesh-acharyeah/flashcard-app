@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Flashcard from './Flashcard';
+import { flashcards } from './data';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>📘 Flashcard Learning App</h1>
+      <div className="card-grid">
+        {flashcards.map(card => (
+          <Flashcard key={card.id} card={card} />
+        ))}
+      </div>
     </div>
   );
 }
