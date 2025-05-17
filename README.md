@@ -13,12 +13,6 @@ A simple and interactive flashcard quiz application built with **React**. Users 
 
 ---
 
-## 🖥️ Demo
-
-Coming soon... *(You can add a Netlify/Vercel link here if hosted)*
-
----
-
 ## 🛠️ Tech Stack
 
 - **React** – Component-based UI library
